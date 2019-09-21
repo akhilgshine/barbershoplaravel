@@ -22,6 +22,10 @@
                             <label>Mobile</label>
                             {{Form::text('mobile','',['class'=>'form-control','placeholder'=>'Enter Mobile'])}}
                         </div>
+                        <div class="form-group">
+                            <label>Mobile</label>
+                            {{Form::text('mobile','',['class'=>'form-control','placeholder'=>'Enter Mobile'])}}
+                        </div>
                             <div class="row" style="margin-top: 15px;">
                                 <div class="form-group col-md-6">
                                     <label>Hair Cut Type</label>
