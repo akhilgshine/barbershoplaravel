@@ -11,10 +11,14 @@
 |
 */
 
+<<<<<<< Updated upstream
 use App\Barber;
 use App\BookingSlots;
 use App\BookingType;
 
+=======
+//Routes::get('logout',array('user' => 'HomeController@doLogout'));
+>>>>>>> Stashed changes
 Route::get('/', function () {
     return view('homepage');
 });
@@ -38,7 +42,13 @@ Route::get('/book', function () {
 Route::post('/contact/submit','MessageController@submit');
 Auth::routes();
 
+<<<<<<< Updated upstream
 Route::get('/home', 'HomeController@index');
 
 Route::get('/barber', 'BookingController@getBarber');
 
+=======
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('view-records','appointmentcontroller@index');
+>>>>>>> Stashed changes
