@@ -75,5 +75,10 @@ if ($validator->fails()) {
 }
 
     }
+    public function doLogout()
+{
+    Auth::logout(); // log the user out of our application
+    return Redirect::to('admin'); // redirect the user to the login screen
+}
 
 }
