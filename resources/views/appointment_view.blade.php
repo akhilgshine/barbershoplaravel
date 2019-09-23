@@ -9,6 +9,7 @@
 <td>Id</td>
 <td>Barber Name</td>
 <td>Booking Time</td>
+<a href="{{ URL::to('logout') }}">Logout</a>
 </tr>
 @foreach ($barbers as $barber)
 <tr>
