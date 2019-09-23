@@ -33,11 +33,17 @@
                                         <option value="3">3</option>
                                     </select>
                                 </div>
+
                                 <div class="form-group col-md-6">
                                     <label>Appoinment Date</label>
-                                    <input type="date" class="form-control" placeholder="Appoinment Date">
+                                    <input type="date" name='date' class="form-control datepicker" placeholder="Appoinment Date">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Appoinment Time</label>
+                                    <input type="date" nam='time' class="form-control timepicker" placeholder="Appoinment Date">
                                 </div>
                             </div>
+
 
                             <button type="submit" class="btn btn-theme">Book Now</button>
                         {!! Form::close() !!}
@@ -45,3 +51,4 @@
                 </div>
             </div>
             @endsection
+

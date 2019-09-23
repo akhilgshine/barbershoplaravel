@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="/css/DesignStyle.css" />
 
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+
     <!--------------------------- /STYLESHEETS ----------------------------->
     <title>MuscleWorx</title>
 </head>
@@ -74,7 +76,29 @@
 <!--------------------------- JS Script ----------------------------->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js
+"></script>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="Stylesheet" type="text/css" />
+
 <!--------------------------- /JS Script ----------------------------->
+<script>
+
+    $('.timepicker').timepicker({
+        timeFormat: 'h:mm p',
+        interval: 30,
+        minTime: '10',
+        maxTime: '5:00pm',
+        defaultTime: '10',
+        startTime: '10:00',
+        dynamic: false,
+        dropdown: true,
+        scrollbar: true
+    });
+    $(".datepicker").datepicker();
+
+</script>
 </body>
 
 </html>
