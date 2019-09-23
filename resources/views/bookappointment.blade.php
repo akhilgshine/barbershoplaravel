@@ -8,10 +8,11 @@
                 <h3 class="text-center">Book Now</h3>
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-3">
+                        {{$barbers}}
                         {!! Form::open(['url'=>'bookappointment/submit']) !!}
 
                                 <div class="form-group">
-                                    <label>First Name</label>
+                                    <label> Name</label>
                                     {{Form::text('name','',['class'=>'form-control','placeholder'=>'Enter name'])}}
                                 </div>
                             <div class="form-group">
@@ -22,10 +23,7 @@
                             <label>Mobile</label>
                             {{Form::text('mobile','',['class'=>'form-control','placeholder'=>'Enter Mobile'])}}
                         </div>
-                        <div class="form-group">
-                            <label>Mobile</label>
-                            {{Form::text('mobile','',['class'=>'form-control','placeholder'=>'Enter Mobile'])}}
-                        </div>
+
                             <div class="row" style="margin-top: 15px;">
                                 <div class="form-group col-md-6">
                                     <label>Hair Cut Type</label>

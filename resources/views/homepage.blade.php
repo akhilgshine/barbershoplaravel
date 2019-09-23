@@ -1,111 +1,215 @@
-@extends('layout.app')
-@section('content')
-    <div class="container main-container">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--------------------------- STYLESHEETS ----------------------------->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="Css/DesignStyle.css" />
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700" rel="stylesheet">
+  <!--------------------------- /STYLESHEETS ----------------------------->
+  <title>BARBERZ</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!--------------------------- NAVIGATION ----------------------------->
+    <nav class="navbar navbar-theme navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">BARBERZ</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navtheme navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Booking</a></li>
+            <li><a href="#">Contact</a></li>
+            <!-- <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li> -->
+            <!-- <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i> User <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Log Out</a></li>
+                  </ul>
+                </li> -->
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!--------------------------- /NAVIGATION ----------------------------->
+    <div class="row" style="margin-top: 50px;">
+      <img src="./Images/banner-massages.jpg" class="img-responsive" />
+    </div>
+
+    <div class="row">
+      <div class="container" style="margin-top: 85px; margin-bottom: 85px;">
         <div class="row">
-            <div class="col-sm-12 bg-white" style="margin-bottom: 15px;">
-                <img src="./Images/hero_1.jpg" class="img-responsive" alt="banner"
-                     style="padding-top: 15px; margin-bottom: 15px; " />
-                <h3 class="text-center">How it works? Here our expert.</h3>
-                <div class="row" style="padding-top: 15px; padding-bottom: 15px; ">
-                    <div class="col-sm-4">
-                        <img src="./Images/21138817_l.jpg" class="img-responsive img-thumbnail" alt="banner" />
-                    </div>
-                    <div class="col-sm-8">
-                        <p>If you’re asking yourself “how can I deal with my aching neck and shoulders?” and you’re looking for
-                            massage therapy in Hamilton then give me a call because looking after aching muscles is what I’ve been
-                            doing for the past fourteen years, and with thousands of satisfied customers I can happily reassure you
-                            that this is massage therapy that works! While neck and shoulder pain is possibly one of the most common
-                            muscle ailments it’s not the only one I deal with so whether it’s legs, back, neck, shoulders, or where
-                            ever just give me a call.</p>
-                        <p>It doesn’t matter what the activity is, from a walk in the park to hike across the Alps – through all
-                            walks of life we sometimes find ourselves needing that little bit of extra attention, and that’s exactly
-                            what I do for you at MuscleWorx.</p>
-                        <p>At MuscleWorx I offer a range of massage treatments, from a comfortable relaxation massage to
-                            specialised sports massage and deep tissue massage techniques designed to identify and target areas of
-                            specific concern.</p>
-                        <p> My Hillcrest massage clinic is quiet and easy to find just a few kilometres from Hamilton’s CBD, and
-                            your comfort is guaranteed with our ergonomic massage tables designed and made exclusively for
-                            MuscleWorx.</p>
-                        <p>So what are you waiting for? If you’re training, recovering, rewarding yourself, or just relaxing, then
-                            Hamilton’s MuscleWorx Massage Clinic is the place you want to be.</p>
-                    </div>
-                </div>
-                <hr />
-                <h3 class="text-center">Our Services</h3>
-                <div class="row" style="padding-top: 15px; padding-bottom: 15px; ">
-
-                    <!-- Nav tabs -->
-                    <div class="col-md-4 col-sm-12">
-                        <ul class="nav nav-tabs nav-pills nav-stacked" role="tablist">
-                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
-                                                                      data-toggle="tab">Sports Massage</a></li>
-                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Deep
-                                    Tissue Massage</a></li>
-                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
-                                                       data-toggle="tab">Therapeutic Massage</a></li>
-                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab"
-                                                       data-toggle="tab">Relaxation Massage</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Tab panes -->
-                    <div class="col-md-8 col-sm-12">
-                        <div class="tab-content" style="min-height: 280px; max-height: 280px; overflow-y: auto;">
-                            <div role="tabpanel" class="tab-pane active" id="home">
-                                <h3 style="margin-top: 0px;">Sports Massage</h3>
-                                <p>Sports and remedial massage is an effective and beneficial form of physical therapy, not only for
-                                    active sports people, or those requiring therapy after a soft tissue injury, but also for those
-                                    seeking relief from muscular tension or simply to maintain healthy muscles.</p>
-
-                                <p>Sports and remedial massage is the skill of manipulating soft tissues of the body and isolating
-                                    individual muscle groups using specific and specialised techniques including stroking, kneading and
-                                    compressing.</p>
-
-                                <p>Providing regular programmes of sports massage, such as pre-event and post-event massage,
-                                    mobilisation and stretching can enhance the physical, physiological and psychological well being of
-                                    active individuals.</p>
-
-                                <p>Let me work with you to develop a massage treatment plan that keeps you in peak condition leading
-                                    up to, and beyond your event.</p>
-                                For this service <a href="#">Book Now</a>
-                            </div>
-                            <div role="tabpanel" class="tab-pane" id="profile">
-                                <h3 style="margin-top: 0px;">Deep Tissue Massage</h3>
-                                <p>Deep tissue massage is often used in the process of recovering from injury or illness your body may
-                                    experience unwanted aches and pains, your deep tissue massage program will be designed to work
-                                    specifically on those areas to help relieve tension, restore mobility, and eliminate pain.</p>
-                                <p>Leading an active life can often result in sudden muscular injuries, I have been trained to work
-                                    closely with you to eliminate muscle pain, restore mobility as quickly as possible, and reduce the
-                                    risk of permanent damage.</p>
-                                For this service <a href="#">Book Now</a>
-                            </div>
-                            <div role="tabpanel" class="tab-pane" id="messages">
-                                <h3 style="margin-top: 0px;">Therapeutic Massage</h3>
-                                <p>Therapeutic massage is often used in the process of recovering from injury or illness your body may
-                                    experience unwanted aches and pains, your deep tissue massage program will be designed to work
-                                    specifically on those areas to help relieve tension, restore mobility, and eliminate pain.</p>
-                                <p>Leading an active life can often result in sudden muscular injuries, as a professional massage
-                                    therapist I have trained to work closely with you to eliminate muscle pain, restore mobility as
-                                    quickly as possible, and reduce the risk of permanent damage.</p>
-                                For this service <a href="#">Book Now</a>
-                            </div>
-                            <div role="tabpanel" class="tab-pane" id="settings">
-                                <h3 style="margin-top: 0px;">Relaxation Massage</h3>
-                                <p>A more relaxed massage suitable for everyone. Known to reduce pain, soothe muscles, improve
-                                    circulation whilst promoting health and well being.</p>
-
-                                <p>Relaxation massage, often referred to as Swedish massage, uses a variety of techniques to help you
-                                    unwind and rejuvenate. During a relaxation massage I will use pressure ranging from light to firm to
-                                    promote relaxation, and ease muscle tension.</p>
-                                For this service <a href="#">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#">
-                    <img src="./Images/banner_1900x480_massage-01_img_24.jpg" class="img-responsive" alt="banner"
-                         style="padding-top: 15px; margin-bottom: 15px; " />
-                </a>
+          <div class="col-sm-6">
+            <img src="./Images/56d71cc82e5265b7008bac7d-750-563.jpg" class="img-responsive" /> 
+          </div>
+          <div class="col-sm-6" style="padding-top: 10%;">
+            <h1 class="text-center">
+              Welcome To Barberz!
+            </h1> 
+            <div class="text-muted text-center">
+              <i class="fa fa-cut"></i>
             </div>
+            <p class="text-center" style="font-size: 18px; margin-top: 15px;">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br /> Iure nesciunt nemo vel earum maxime neque!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            @endsection
+    <div class="row">
+      <div class="wrapper_saloon">
+        <div class="container">
+          <ul class="slides_times">
+            <li class="ds_wtime">
+                <div class="ds_day">
+                    MON
+                </div>
+                <div class="ds_whours">
+                    09:00-17:00
+                </div>
+            </li>
+            <li class="ds_wtime closed">
+                <div class="ds_day">
+                    tue
+                </div>
+                <div class="ds_whours">
+                    CLOSED
+                </div>
+            </li>
+            <li class="ds_wtime">
+                <div class="ds_day">
+                    wed
+                </div>
+                <div class="ds_whours">
+                    09:00-17:00
+                </div>
+            </li>
+            <li class="ds_wtime">
+                <div class="ds_day">
+                    thu
+                </div>
+                <div class="ds_whours">
+                    10:00-20:00
+                </div>
+            </li>
+            <li class="ds_wtime">
+                <div class="ds_day">
+                    fri
+                </div>
+                <div class="ds_whours">
+                    10:00-18:00
+                </div>
+            </li>
+            <li class="ds_wtime">
+                <div class="ds_day">
+                    sat
+                </div>
+                <div class="ds_whours">
+                    08:00-13:00
+                </div>
+            </li>
+            <li class="ds_wtime closed">
+                <div class="ds_day">
+                    sun
+                </div>
+                <div class="ds_whours">
+                    CLOSED
+                </div>
+            </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="container" style="padding-top: 30px; padding-bottom: 30px;">
+        <h1 class="text-center">Our Blog</h1>
+        <div class="text-center text-muted" style="padding-top: 15px; padding-bottom: 15px;"><i class="fa fa-cut"></i></div>
+        <div class="row" style="margin-top: 15px; margin-bottom: 15px;">
+          <!-- blog item -->
+          <div class="col-sm-4">
+              <div class="bg-white">
+                <img src="./Images/bigstock-Barber-cutting-hair-with-sciss-32516945.jpg" class="img-responsive" />
+                <div class="p-1">
+                    <a href="javascript: void(0);"><h4>Lorem ipsum dolor sit amet</h4></a>
+                    <p><span class="text-muted">July 17, 2019</span> by <span class="text-theme">Admin</span></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.</p>
+                </div>
+              </div>
+            </div>
+          <!-- blog item END -->
+          <!-- blog item -->
+          <div class="col-sm-4">
+              <div class="bg-white">
+                <img src="./Images/shutterstock_777407209-min.jpg" class="img-responsive" />
+                <div class="p-1">
+                    <a href="javascript: void(0);"><h4>Lorem ipsum dolor sit amet</h4></a>
+                    <p><span class="text-muted">July 17, 2019</span> by <span class="text-theme">Admin</span></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.</p>
+                </div>
+              </div>
+            </div>
+          <!-- blog item END -->
+          <!-- blog item -->
+          <div class="col-sm-4">
+              <div class="bg-white">
+                <img src="./Images/GettyImages_92348095.0.jpg" class="img-responsive" />
+                <div class="p-1">
+                    <a href="javascript: void(0);"><h4>Lorem ipsum dolor sit amet</h4></a>
+                    <p><span class="text-muted">July 17, 2019</span> by <span class="text-theme">Admin</span></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.</p>
+                </div>
+              </div>
+            </div>
+          <!-- blog item END -->
+        </div>
+        <div class="text-center" style="padding-top: 7px;">
+          <a href="#" class="btn btn-theme">View More</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <footer class="text-center" style="background-color: black; color: #fff; padding: 7px;">
+    Copyright &copy; 2019 All rights reserved
+  </footer>
+  <!--------------------------- JS Script ----------------------------->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+  <script src="https://kit.fontawesome.com/094ea8effd.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--------------------------- /JS Script ----------------------------->
+</body>
+
+</html>

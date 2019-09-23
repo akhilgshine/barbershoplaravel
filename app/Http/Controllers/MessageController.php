@@ -27,7 +27,8 @@ class MessageController extends Controller
 
         $message->save();
 
-        return redirect('/homepage');
+        return redirect()->back()->with('message', 'Message Send!');
+//        return redirect('/homepage');
 
     }
 }

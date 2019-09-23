@@ -15,10 +15,13 @@ class CreateBookingTypesTable extends Migration
     {
         Schema::create('booking_types', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('slot_id')->unsigned()->index();;
+            $table->string('type');
+            $table->string('cost');
+            $table->integer('duration');
+
+
 
             $table->timestamps();
-            $table->foreign('slot_id')->references('id')->on('booking_slots')->onDelete('cascade');
 
         });
     }
