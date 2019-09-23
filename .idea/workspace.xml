@@ -2,9 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="310353a5-5442-420a-91e2-daf14abbc61a" name="Default Changelist" comment="">
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/BookingType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/BookingType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MessageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+>>>>>>> 07725281cd66cd265fc4caf8675803599e4c6fb0
       <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_21_212116_create_booking_types_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_21_212116_create_booking_types_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/bookappointment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bookappointment.blade.php" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/resources/views/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/app.blade.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/resources/views/contact_us.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/homepage.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.php" beforeDir="false" />
+>>>>>>> Stashed changes
+>>>>>>> 07725281cd66cd265fc4caf8675803599e4c6fb0
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +41,7 @@
       <phar pharPath="$USER_HOME$/Downloads/composer.phar" interpreterId="4b07a13b-1800-494a-a1fa-04eb0c1bf7a5" />
     </execution>
   </component>
+<<<<<<< Updated upstream
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -145,6 +169,11 @@
       </list>
     </option>
   </component>
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+>>>>>>> Stashed changes
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
@@ -231,6 +260,7 @@
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
     </include_path>
   </component>
+<<<<<<< Updated upstream
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
@@ -343,6 +373,10 @@
       <pane id="Scope" />
     </panes>
   </component>
+=======
+  <component name="ProjectId" id="1RDUqhM6YepBUPD80VOc2PIjbcW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+>>>>>>> Stashed changes
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -393,7 +427,12 @@
       <workItem from="1568948679195" duration="88000" />
       <workItem from="1568973169466" duration="1685000" />
       <workItem from="1568977718379" duration="6143000" />
+<<<<<<< HEAD
       <workItem from="1569052722578" duration="17981000" />
+=======
+<<<<<<< Updated upstream
+      <workItem from="1569052722578" duration="15218000" />
+>>>>>>> 07725281cd66cd265fc4caf8675803599e4c6fb0
     </task>
     <servers />
   </component>
@@ -774,4 +813,14 @@
       </provider>
     </entry>
   </component>
+=======
+      <workItem from="1569052722578" duration="4756000" />
+      <workItem from="1569201443770" duration="24000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+>>>>>>> Stashed changes
 </project>
