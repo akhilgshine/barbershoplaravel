@@ -15,6 +15,7 @@ use App\Barber;
 use App\BookingSlots;
 use App\BookingType;
 
+//Routes::get('logout',array('user' => 'HomeController@doLogout'));
 Route::get('/', function () {
     return view('homepage');
 });
@@ -42,3 +43,5 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/barber', 'BookingController@getBarber');
 
+
+Route::get('view-records','appointmentcontroller@index');
